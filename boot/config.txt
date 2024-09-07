@@ -1,0 +1,14 @@
+# For more options and information see
+# http://rpf.io/configtxt
+# Some settings may impact device functionality. See link above for details
+#
+#
+#
+
+
+# Use 24 bit colors
+framebuffer_depth=24
+
+# rotate the screen by 90 degrees
+display_hdmi_rotate=1
+lcd_rotate=1

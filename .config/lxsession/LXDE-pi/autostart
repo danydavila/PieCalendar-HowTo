@@ -1,0 +1,21 @@
+# Start LXPanel with LXDE-pi profile
+@lxpanel --profile LXDE-pi
+
+# Start PCManFM with LXDE-pi profile
+@pcmanfm --desktop --profile LXDE-pi
+
+# Disable screensaver
+@xset s 0 # Disable screensaver completely
+
+# Disable DPMS (Energy Star power management)
+@xset -dpms # Prevent screen from going blank
+
+# Disable screensaver timeout
+@xset s noblank # Keep screen always on
+
+# Launch Chromium browser in kiosk mode with DAKboard URL
+@chromium-browser --kiosk --noerrdialogs --incognito --disable-infobars https://dakboard.com/display/uuid/XXXXXXXX-XXXXXX-XXXX-XXXXXXXX
+
+# Update system package lists and Upgrade installed packages
+@apt update
+@apt upgrade
